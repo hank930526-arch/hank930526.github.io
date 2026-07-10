@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>郭恩豪 Hank - 個人首頁</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <style type="text/css">
+        body {
+            font-family: "微軟正黑體", "Segoe UI", sans-serif;
+            background-color: #f0f4f8; /* 偏藍底色：淡淡的冷灰色調 */
+        }
+        .main-container {
+            max-width: 1140px;
+            margin: 40px auto;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0px 8px 24px rgba(30, 58, 138, 0.1); /* 帶有微藍色的陰影細節 */
+            overflow: hidden;
+        }
+        /* 左側導覽列：採用一體化專業深藍 */
+        .sidebar {
+            background-color: #1e293b; /* 質感深藍（Slate 800） */
+            min-height: 85vh;
+            padding: 40px 24px;
+        }
+        /* 圓形照片微調 */
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border: 4px solid #3b82f6; /* 亮藍色邊框細節 */
+            border-radius: 50%;
+        }
+        /* 側邊導覽選單樣式微調 */
+        .nav-menu .list-group-item {
+            background-color: transparent;
+            color: #cbd5e1;
+            border: none;
+            margin-bottom: 8px;
+            border-radius: 6px !important;
+            transition: all 0.3s;
+        }
+        .nav-menu .list-group-item:hover {
+            background-color: rgba(59, 130, 246, 0.15);
+            color: #3b82f6;
+        }
+        .nav-menu .list-group-item.active {
+            background-color: #3b82f6 !important; /* 啟動時為亮藍色 */
+            color: white !important;
+        }
+        /* 榮譽標籤 */
+        .badge-honor {
+            background-color: #e0f2fe;
+            color: #0369a1;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container main-container">
+        <div class="row no-gutters">
+            
+            <div class="col-3 sidebar text-white text-center">
+                <img src="image/me.jpg" alt="郭恩豪 Hank" class="profile-img mb-3">
+                
+                <h4 class="font-weight-bold mb-1">郭恩豪 Hank</h4>
+                <p class="small text-muted mb-4">逢甲大學 工工系</p>
+                <hr class="border-secondary mb-4">
+                
+                <div class="list-group nav-menu text-left">
+                    <a href="index.html" class="list-group-item list-group-item-action active">
+                        👤 Home 關於我
+                    </a>
+                    <a href="portfolio.html" class="list-group-item list-group-item-action">
+                        💼 Portfolio 作品專題
+                    </a>
+                </div>
+                
+                <div class="mt-5 pt-5 text-muted small">
+                    hank930526@gmail.com
+                </div>
+            </div>
+            
+            <div class="col-9 p-5">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h1 class="font-weight-bold text-dark mb-0">關於我 <span class="text-primary" style="font-size: 1.5rem;">About Me</span></h1>
+                    <span class="badge badge-pill badge-primary p-2">TOEIC 800 分</span>
+                </div>
+                <h5 class="text-secondary font-italic mb-4">「用數學模型拆解複雜決策，在不確定性中推導最優解。」</h5>
+                <hr>
+                
+                <p class="text-secondary" style="line-height: 1.8; font-size: 1.05rem; text-align: justify;">
+                    你好！我是郭恩豪，現就讀於逢甲大學工業工程與系統管理學系四年級。大學期間，我經歷了從大一的迷惘到確立目標的蛻變，憑藉高度的自律與對工工領域的熱忱，學業表現逐年大幅攀升，累計 GPA 達 3.6/4.3。
+                </p>
+                <p class="text-secondary" style="line-height: 1.8; font-size: 1.05rem; text-align: justify;">
+                    我深耕於<strong>統計學、作業研究、數據分析與品質工程</strong>等領域，曾榮獲<strong>作業研究（二）班級第一名</strong>、<strong>工程經濟（一）班級第一名</strong>之系友獎學金，展現卓越的數理邏輯基礎。我擅長利用 R、Python、Minitab、Flexsim 與 SQL 等多元工具進行系統建模，期待未來能在碩士階段深入最佳化決策與智慧系統優化之研究。
+                </p>
+                
+                <h3 class="font-weight-bold text-dark mt-5 mb-4">📊 核心技能 (Technical Skills)</h3>
+                <div class="row">
+                    <div class="col-6 mb-3">
+                        <div class="p-3 border rounded shadow-sm bg-light" style="border-left: 5px solid #3b82f6 !important;">
+                            <h6 class="font-weight-bold text-primary">程式語言與資料庫</h6>
+                            <small class="text-secondary">R 語言 (精通)、Python、SQL Server、Access</small>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <div class="p-3 border rounded shadow-sm bg-light" style="border-left: 5px solid #3b82f6 !important;">
+                            <h6 class="font-weight-bold text-primary">工程分析與模擬軟體</h6>
+                            <small class="text-secondary">Minitab、Flexsim 系統模擬、Excel 數據分析</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="font-weight-bold text-dark mt-4 mb-3">🏅 獲獎與榮譽 (Awards)</h3>
+                <ul class="list-group list-group-flush mb-4">
+                    <li class="list-group-item d-flex justify-content-between align-items-center pl-0">
+                        <span>逢甲大學工工系 系友獎學金 — <strong>作業研究(二) 班級第一名</strong></span>
+                        <span class="badge badge-honor p-2">榮譽名次</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center pl-0">
+                        <span>逢甲大學工工系 系友獎學金 — <strong>工程經濟(一) 班級第一名</strong></span>
+                        <span class="badge badge-honor p-2">榮譽名次</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center pl-0">
+                        <span>逢甲大學圖書館優秀作品獎 — 《以 Excel 數據驗證田口方法改善封裝製程品質》</span>
+                        <span class="badge badge-honor p-2">優秀專案</span>
+                    </li>
+                </ul>
+                
+                <div class="mt-5 text-right">
+                    <a href="portfolio.html" class="btn btn-primary px-4 py-2 font-weight-bold shadow-sm">前往查看學術專題作品集 →</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>

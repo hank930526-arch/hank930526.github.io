@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>郭恩豪 Hank - 作品專題</title>
+    
+    <link class="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <style type="text/css">
+        body {
+            font-family: "微軟正黑體", "Segoe UI", sans-serif;
+            background-color: #f0f4f8;
+        }
+        .main-container {
+            max-width: 1140px;
+            margin: 40px auto;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0px 8px 24px rgba(30, 58, 138, 0.1);
+            overflow: hidden;
+        }
+        .sidebar {
+            background-color: #1e293b;
+            min-height: 85vh;
+            padding: 40px 24px;
+        }
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border: 4px solid #3b82f6;
+            border-radius: 50%;
+        }
+        .nav-menu .list-group-item {
+            background-color: transparent;
+            color: #cbd5e1;
+            border: none;
+            margin-bottom: 8px;
+            border-radius: 6px !important;
+            transition: all 0.3s;
+        }
+        .nav-menu .list-group-item:hover {
+            background-color: rgba(59, 130, 246, 0.15);
+            color: #3b82f6;
+        }
+        .nav-menu .list-group-item.active {
+            background-color: #3b82f6 !important;
+            color: white !important;
+        }
+        /* 專題卡片美化 */
+        .project-card {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.02);
+        }
+        .highlight-text {
+            color: #1d4ed8;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container main-container">
+        <div class="row no-gutters">
+            
+            <div class="col-3 sidebar text-white text-center">
+                <img src="images/me.jpg" alt="郭恩豪 Hank" class="profile-img mb-3">
+                
+                <h4 class="font-weight-bold mb-1">郭恩豪 Hank</h4>
+                <p class="small text-muted mb-4">逢甲大學 工工系</p>
+                <hr class="border-secondary mb-4">
+                
+                <div class="list-group nav-menu text-left">
+                    <a href="index.html" class="list-group-item list-group-item-action">
+                        👤 Home 關於我
+                    </a>
+                    <a href="portfolio.html" class="list-group-item list-group-item-action active">
+                        💼 Portfolio 作品專題
+                    </a>
+                </div>
+                
+                <div class="mt-5 pt-5 text-muted small">
+                    hank930526@gmail.com
+                </div>
+            </div>
+            
+            <div class="col-9 p-5">
+                <h1 class="font-weight-bold text-dark mb-2">研究專題經歷</h1>
+                <p class="text-muted mb-4">精選學術研究與大專專題成果展示：</p>
+                <hr class="mb-4">
+                
+                <div class="project-card">
+                    <span class="badge badge-dark mb-2" style="font-size: 0.85rem;">品質工程與生產管理</span>
+                    <h4 class="font-weight-bold text-dark mb-2">融合六標準差方法與雙目標田口實驗設計提升標準型氣切管封裝品質</h4>
+                    <p class="small text-muted mb-3">👤 指導教授：鍾健平 教授</p>
+                    
+                    <p class="text-secondary small" style="text-align: justify; line-height: 1.6;">
+                        針對醫療器材熱封製程之多重品質特性（拉力值與外觀品質）進行最佳化研究。導入 DMAIC 改善流程，並利用雙目標田口實驗設計直交表與多重品質特性信號雜訊比 (MRSN) 尋求最佳參數組合。
+                    </p>
+                    <div class="p-2 bg-white rounded border d-flex justify-content-around mt-2">
+                        <span class="small">📈 製程能力指標 <strong>Cpk 大幅提升至 <span class="highlight-text">1.69</span></strong></span>
+                        <span class="small">📉 外觀缺陷率 <strong>由 76% 顯著降至 <span class="highlight-text">40%</span></strong></span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <span class="badge badge-dark mb-2" style="font-size: 0.85rem;">人因工程與人機介面</span>
+                    <h4 class="font-weight-bold text-dark mb-2">基於腦波信號的視覺與動態刺激對思想控制效果的影響研究</h4>
+                    <p class="small text-muted mb-3">👤 指導教授：唐國豪 教授</p>
+                    
+                    <p class="text-secondary small" style="text-align: justify; line-height: 1.6;">
+                        運用 Emotiv BCI 腦波技術，探討靜態圖片與動態機械手臂刺激對思想控制準確率之影響。透過 R 語言進行多因子變異數分析 (ANOVA) 與假說檢定。
+                    </p>
+                    <div class="p-2 bg-white rounded border d-flex justify-content-around mt-2">
+                        <span class="small">🧠 實驗證實：<strong>動態刺激物在指令準確率上<span class="highlight-text">顯著優於</span>靜態刺激</strong></span>
+                        <span class="small">🏆 具備神經康復治療與 BCI 優化設計之高應用價值</span>
+                    </div>
+                </div>
+                
+                <div class="project-card" style="border-left: 4px solid #10b981 !important;">
+                    <span class="badge badge-success mb-2" style="font-size: 0.85rem;">研討會口頭發表</span>
+                    <h5 class="font-weight-bold text-dark mb-2">第二十七屆決策分析研討會 (2025.01)</h5>
+                    <p class="text-secondary small mb-0">
+                        發表口頭論文：<strong>《壽司郎紫式決策分析》</strong>，於國立清華大學進行現場學術口頭發表。
+                    </p>
+                </div>
+                
+                <div class="mt-5">
+                    <a href="index.html" class="btn btn-outline-secondary font-weight-bold shadow-sm">← 返回個人首頁</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>
