@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>郭恩豪 Hank - 個人首頁</title>
+    
+    <!-- 引入網頁前端框架與必要外掛 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- 【CSS 樣式設定區】：控制全站色系與清晰度 -->
+    <style type="text/css">
+        body {
+            font-family: "微軟正黑體", "Segoe UI", sans-serif;
+            background-color: #f0f4f8; /* 偏藍底色：冷灰色調背景 */
+        }
+        /* 主容器：控制整體卡片外框 */
+        .main-container {
+            max-width: 1140px;
+            margin: 40px auto;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0px 8px 24px rgba(30, 58, 138, 0.12); /* 帶有工工科技感的微藍陰影 */
+            overflow: hidden;
+        }
+        /* 左側側邊欄：沉穩的高級深藍 */
+        .sidebar {
+            background-color: #0f172a; /* 加深為更專業的 Slate 900 黑色系藍 */
+            min-height: 90vh;
+            padding: 40px 20px;
+        }
+        /* 圓形照片微調：對接你的 image 資料夾 */
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border: 4px solid #2563eb; /* 改用正藍色邊框 */
+            border-radius: 50%;
+        }
+        /* 側邊導覽選單樣式微調 */
+        .nav-menu .list-group-item {
+            background-color: transparent;
+            color: #94a3b8; /* 未選中時：清晰的淺灰藍 */
+            border: none;
+            margin-bottom: 8px;
+            border-radius: 6px !important;
+            transition: all 0.3s;
+            font-size: 0.95rem;
+        }
+        /* 滑鼠懸停效果 */
+        .nav-menu .list-group-item:hover {
+            background-color: rgba(37, 99, 213, 0.15);
+            color: #60a5fa;
+        }
+        /* 被選中時的亮藍色高亮 */
+        .nav-menu .list-group-item.active {
+            background-color: #2563eb !important; 
+            color: white !important;
+            font-weight: bold;
+        }
+        /* 內文文字清晰度調校 */
+        .text-custom-dark {
+            color: #1e293b !important; /* 標題改用深灰黑，對比度更高 */
+        }
+        .text-custom-secondary {
+            color: #334155 !important; /* 內文改用深 Slate 灰，比原本的 secondary 更黑、更清晰 */
+            font-weight: 450;
+        }
+        /* 榮譽標籤 */
+        .badge-honor {
+            background-color: #dbeafe;
+            color: #1e40af;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 【全站網頁主結構開始】 -->
+    <div class="container main-container">
+        <div class="row no-gutters">
+            
+            <!-- ========================================== -->
+            <!-- 【左側導覽列開始 (Navigation Bar)】佔 3/12 寬度 -->
+            <!-- ========================================== -->
+            <div class="col-3 sidebar text-white text-center">
+                
+                <!-- 個人照片：修正路徑對接你的單數 image 資料夾 -->
+                <img src="image/me.jpg.jpg" alt="郭恩豪 Hank" class="profile-img mb-3">
+                
+                <!-- 照片下方個人基本資料區 -->
+                <h4 class="font-weight-bold text-white mb-2">郭恩豪 Hank</h4>
+                <p class="small mb-1 text-white-50">清華大學</p>
+                <p class="small mb-3" style="color: #93c5fd; font-size: 0.8rem;">工業工程與工程管理研究所</p>
+                <p class="small text-white-50 mb-4" style="font-size: 0.85rem; letter-spacing: 0.5px;">✉ hank930526@gmail.com</p>
+                
+                <hr class="border-secondary mb-4">
+                
+                <!-- 左側導覽按鈕群組：已擴充欄位方便未來加入新東東 -->
+                <div class="list-group nav-menu text-left">
+                    <!-- 現有分頁 -->
+                    <a href="index.html" class="list-group-item list-group-item-action active">
+                        👤 Home 關於我
+                    </a>
+                    <a href="portfolio.html" class="list-group-item list-group-item-action">
+                        💼 Portfolio 作品專題
+                    </a>
+                    
+                    <!-- 未來擴充預留分頁（點擊暫時返回首頁，未來可自行修改網址） -->
+                    <a href="index.html" class="list-group-item list-group-item-action">
+                        🏫 Experience 經歷著作
+                    </a>
+                    <a href="index.html" class="list-group-item list-group-item-action">
+                        📊 Projects 實務專案
+                    </a>
+                    <a href="index.html" class="list-group-item list-group-item-action">
+                        📝 Blog 個人網誌
+                    </a>
+                </div>
+                
+            </div>
+            <!-- ========================================== -->
+            <!-- 【左側導覽列結束】 -->
+            <!-- ========================================== -->
+
+
+            <!-- ========================================== -->
+            <!-- 【右側核心內文區開始】佔 9/12 寬度 -->
+            <!-- ========================================== -->
+            <div class="col-9 p-5" style="background-color: #ffffff;">
+                
+                <!-- 自我介紹大標題與多益標籤區 -->
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h1 class="font-weight-bold text-custom-dark mb-0">關於我 <span class="text-primary" style="font-size: 1.5rem;">About Me</span></h1>
+                    <span class="badge badge-pill badge-primary p-2 shadow-sm" style="background-color: #1d4ed8;">TOEIC 800 分</span>
+                </div>
+                
+                <!-- 個人核心座右銘 -->
+                <h5 class="font-italic mb-4" style="color: #1e40af;">「用數學模型拆解複雜決策，在不確定性中推導最優解。」</h5>
+                <hr>
+                
+                <!-- 【自我介紹內文開始】：修改為都會了、強調即戰力的研究生求職風格 -->
+                <div class="mt-4 mb-5">
+                    <p class="text-custom-secondary" style="line-height: 1.8; font-size: 1.05rem; text-align: justify;">
+                        你好！我是郭恩豪，畢業於逢甲大學工業工程與系統管理學系，現就讀於清華大學工業工程與工程管理研究所一年級。我致力於工業工程、管理科學與前沿科技的深耕，具備將學術理論轉化為企業核心價值之系統改善與優化能力。
+                    </p>
+                    <p class="text-custom-secondary" style="line-height: 1.8; font-size: 1.05rem; text-align: justify;">
+                        在專業核心實力上，我深耕於統計學、作業研究、數據分析與品質工程等領域。透過大學期間參與的兩份核心研究專題，我已累積了紮實的實驗設計、假設檢定與統計分析基礎。在工具鏈方面，我能純熟運用 R、Python、Minitab、Flexsim 與 SQL 進行多維度數據建模與複雜系統流程模擬。
+                    </p>
+                    <p class="text-custom-secondary" style="line-height: 1.8; font-size: 1.05rem; text-align: justify;">
+                        除了傳統工工的系統優化思維，我更具備將工業工程專業領域知識與資料科學進行跨域結合的實戰技能。我目前深耕於機器學習（Machine Learning）、智慧製造（Smart Manufacturing）與數位孿生（Digital Twin）等前瞻技術的開發與導入，擅長利用演算法建構預測模型並進行虛實整合的系統改善。
+                    </p>
+                    <p class="text-custom-secondary" style="line-height: 1.8; font-size: 1.05rem; text-align: justify;">
+                        在研究所階段，我專注於將這些關鍵技術應用於解決實際半導體或高科技產業中的複雜工程問題，並具備協助企業推動智慧製造、製程最佳化與數位轉型落地之即戰力。
+                    </p>
+                </div>
+                <!-- 【自我介紹內文結束】 -->
+				
+                <!-- 【核心技能區塊開始】 -->
+                <h3 class="font-weight-bold text-custom-dark mt-5 mb-4">📊 核心技能 (Technical Skills)</h3>
+                <div class="row">
+                    <div class="col-6 mb-3">
+                        <div class="p-3 border rounded shadow-sm bg-light" style="border-left: 5px solid #2563eb !important;">
+                            <h6 class="font-weight-bold text-primary">程式語言與資料庫</h6>
+                            <small class="text-custom-secondary font-weight-bold">R 語言 (精通)、Python、SQL Server、Access</small>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <div class="p-3 border rounded shadow-sm bg-light" style="border-left: 5px solid #2563eb !important;">
+                            <h6 class="font-weight-bold text-primary">工程分析與模擬軟體</h6>
+                            <small class="text-custom-secondary font-weight-bold">Minitab、Flexsim 系統模擬、Excel 數據分析</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- 【核心技能區塊結束】 -->
+                
+                <!-- 【獲獎榮譽區塊開始】 -->
+                <h3 class="font-weight-bold text-custom-dark mt-4 mb-3">🏅 獲獎與榮譽 (Awards)</h3>
+                <ul class="list-group list-group-flush mb-4">
+                    <li class="list-group-item d-flex justify-content-between align-items-center pl-0">
+                        <span class="text-custom-secondary">逢甲大學工工系 系友獎學金 — <strong>作業研究(二) 班級第一名</strong></span>
+                        <span class="badge badge-honor p-2">榮譽名次</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center pl-0">
+                        <span class="text-custom-secondary">逢甲大學工工系 系友獎學金 — <strong>工程經濟(一) 班級第一名</strong></span>
+                        <span class="badge badge-honor p-2">榮譽名次</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center pl-0">
+                        <span class="text-custom-secondary">逢甲大學圖書館優秀作品獎 — 《以 Excel 數據驗證田口方法改善封裝製程品質》</span>
+                        <span class="badge badge-honor p-2">優秀專案</span>
+                    </li>
+                </ul>
+                <!-- 【獲獎榮譽區塊結束】 -->
+                
+                <!-- 底部引導按鈕 -->
+                <div class="mt-5 text-right">
+                    <a href="portfolio.html" class="btn btn-primary px-4 py-2 font-weight-bold shadow-sm" style="background-color: #2563eb;">前往查看學術專題作品集 →</a>
+                </div>
+            </div>
+            <!-- ========================================== -->
+            <!-- 【右側核心內文區結束】 -->
+            <!-- ========================================== -->
+            
+        </div>
+    </div>
+    <!-- 【全站網頁主結構結束】 -->
+
+</body>
+</html>
